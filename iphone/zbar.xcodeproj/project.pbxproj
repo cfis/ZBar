@@ -40,6 +40,17 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		8BC88EE918D1B01A0007306E /* ZBarCameraSimulator.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5D76C5136FA8F20069AEF5 /* ZBarCameraSimulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC88EEA18D1B01A0007306E /* ZBarCaptureReader.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3CEFA51216347100D7A786 /* ZBarCaptureReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC88EEB18D1B01A0007306E /* ZBarHelpController.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB3789A12A43C7E0059B07B /* ZBarHelpController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC88EEC18D1B01A0007306E /* ZBarImage.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3CEFA61216347100D7A786 /* ZBarImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC88EED18D1B01A0007306E /* ZBarImageScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3CEFA71216347100D7A786 /* ZBarImageScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC88EEE18D1B01A0007306E /* ZBarReaderController.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3CEFA81216347100D7A786 /* ZBarReaderController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC88EEF18D1B01A0007306E /* ZBarReaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3CEFA91216347100D7A786 /* ZBarReaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC88EF018D1B01B0007306E /* ZBarReaderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3CEFAA1216347100D7A786 /* ZBarReaderViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC88EF118D1B01B0007306E /* ZBarSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3CEFAB1216347100D7A786 /* ZBarSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC88EF218D1B01B0007306E /* ZBarSymbol.h in Headers */ = {isa = PBXBuildFile; fileRef = DC3CEFAC1216347100D7A786 /* ZBarSymbol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC88EF318D1B01B0007306E /* zbar.h in Headers */ = {isa = PBXBuildFile; fileRef = DC67C11710A07A810033B702 /* zbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC26004C118631C200FA987B /* ZBarCaptureReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DC26004B118631C200FA987B /* ZBarCaptureReader.m */; };
 		DC290E281351496400A9B857 /* codabar.c in Sources */ = {isa = PBXBuildFile; fileRef = DC290E261351496400A9B857 /* codabar.c */; };
 		DC299A9D1208B5E8006A023C /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libzbar.a */; };
@@ -585,12 +596,34 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		8BC88EE818D1B0010007306E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC88EE918D1B01A0007306E /* ZBarCameraSimulator.h in Headers */,
+				8BC88EEA18D1B01A0007306E /* ZBarCaptureReader.h in Headers */,
+				8BC88EEB18D1B01A0007306E /* ZBarHelpController.h in Headers */,
+				8BC88EEC18D1B01A0007306E /* ZBarImage.h in Headers */,
+				8BC88EED18D1B01A0007306E /* ZBarImageScanner.h in Headers */,
+				8BC88EEE18D1B01A0007306E /* ZBarReaderController.h in Headers */,
+				8BC88EEF18D1B01A0007306E /* ZBarReaderView.h in Headers */,
+				8BC88EF018D1B01B0007306E /* ZBarReaderViewController.h in Headers */,
+				8BC88EF118D1B01B0007306E /* ZBarSDK.h in Headers */,
+				8BC88EF218D1B01B0007306E /* ZBarSymbol.h in Headers */,
+				8BC88EF318D1B01B0007306E /* zbar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		D2AAC07D0554694100DB518D /* libzbar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "libzbar" */;
 			buildPhases = (
 				D2AAC07B0554694100DB518D /* Sources */,
+				8BC88EE818D1B0010007306E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -803,6 +836,7 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = zbar;
+				PUBLIC_HEADERS_FOLDER_PATH = include/ZBar;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -821,6 +855,7 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = zbar;
+				PUBLIC_HEADERS_FOLDER_PATH = include/ZBar;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -975,6 +1010,7 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = zbar;
+				PUBLIC_HEADERS_FOLDER_PATH = include/ZBar;
 				SKIP_INSTALL = YES;
 			};
 			name = Distribution;
